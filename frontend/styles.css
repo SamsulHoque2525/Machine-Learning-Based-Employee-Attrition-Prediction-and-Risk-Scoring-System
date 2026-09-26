@@ -1,0 +1,447 @@
+/* =========================================================
+   EMPLOYEE RISK INTELLIGENCE
+   GLOBAL FRONTEND STYLES
+   ========================================================= */
+
+
+/* =========================================================
+   STREAMLIT MAIN APP
+   ========================================================= */
+
+.stApp {
+    background: #6b7a8d !important;
+    color: #0f172a !important;
+}
+
+[data-testid="stAppViewContainer"] {
+    background: #f4f7fb !important;
+}
+
+[data-testid="stHeader"] {
+    background: transparent !important;
+}
+
+.main {
+    background: #f4f7fb !important;
+}
+
+.block-container {
+    max-width: 1450px !important;
+    padding-top: 1.5rem !important;
+    padding-bottom: 3rem !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+/* FRONTEND TEST */
+.dashboard-header {
+    background: #ffffff !important;
+    border: 2px solid #3b82f6 !important;
+}
+
+/* =========================================================
+   2. TYPOGRAPHY
+   ========================================================= */
+
+html, body, [class*="css"] {
+    font-family: Inter, Arial, sans-serif;
+}
+
+h1 {
+    color: #0f172a !important;
+    font-weight: 750 !important;
+}
+
+h2 {
+    color: #0f172a !important;
+    font-weight: 700 !important;
+}
+
+h3 {
+    color: #1e293b !important;
+    font-weight: 650 !important;
+}
+
+p {
+    color: #475569;
+}
+
+
+/* =========================================================
+   3. DASHBOARD HEADER
+   ========================================================= */
+
+.dashboard-header {
+    background: #8e3f3f;
+    border: 1px solid #25599d;
+    border-radius: 18px;
+    padding: 22px 26px;
+    margin-bottom: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.06);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.header-icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eef4ff;
+    border-radius: 14px;
+
+    font-size: 26px;
+}
+
+.dashboard-title {
+    font-size: 1.65rem;
+    font-weight: 750;
+    color: #0f172a;
+    line-height: 1.2;
+}
+
+.dashboard-subtitle {
+    font-size: 0.92rem;
+    color: #64748b;
+    margin-top: 5px;
+}
+
+.header-status {
+    background: #f0fdf4;
+    color: #166534;
+
+    border: 1px solid #bbf7d0;
+    border-radius: 999px;
+
+    padding: 8px 14px;
+
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.status-dot {
+    display: inline-block;
+
+    width: 8px;
+    height: 8px;
+
+    background: #22c55e;
+    border-radius: 50%;
+
+    margin-right: 7px;
+}
+
+.dashboard-description {
+    background: #f8fafc;
+
+    border-left: 4px solid #3b82f6;
+
+    border-radius: 10px;
+
+    padding: 13px 17px;
+
+    margin-bottom: 24px;
+
+    color: #475569;
+    font-size: 0.92rem;
+}
+
+
+/* =========================================================
+   4. KPI / METRIC CARDS
+   ========================================================= */
+
+div[data-testid="stMetric"] {
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+
+    padding: 20px 22px;
+
+    min-height: 120px;
+
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.06);
+
+    transition: all 0.5s ease;
+}
+
+div[data-testid="stMetric"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(15, 23, 42, 0.09);
+}
+
+div[data-testid="stMetricLabel"] {
+    color: #64748b !important;
+    font-size: 0.88rem !important;
+    font-weight: 600 !important;
+}
+
+div[data-testid="stMetricValue"] {
+    color: #0f172a !important;
+    font-size: 2rem !important;
+    font-weight: 750 !important;
+}
+
+
+/* =========================================================
+   5. SIDEBAR
+   ========================================================= */
+
+section[data-testid="stSidebar"] {
+    background: #ffffff;
+    border-right: 1px solid #e2e8f0;
+}
+
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+    color: #0f172a !important;
+}
+
+section[data-testid="stSidebar"] label {
+    color: #334155 !important;
+    font-weight: 600 !important;
+}
+
+
+/* =========================================================
+   6. INPUT CONTROLS
+   ========================================================= */
+
+div[data-baseweb="select"] > div {
+    border-radius: 9px;
+    border-color: #cbd5e1;
+}
+
+div[data-baseweb="input"] > div {
+    border-radius: 9px;
+}
+
+
+/* =========================================================
+   7. BUTTONS
+   ========================================================= */
+
+.stButton > button {
+    border-radius: 9px;
+    border: 1px solid #cbd5e1;
+
+    font-weight: 600;
+
+    min-height: 42px;
+
+    transition: all 0.5s ease;
+}
+
+.stButton > button:hover {
+    transform: translateY(-1px);
+}
+
+.stDownloadButton > button {
+    border-radius: 9px;
+    font-weight: 650;
+    min-height: 42px;
+}
+
+
+/* =========================================================
+   8. DATA TABLES
+   ========================================================= */
+
+div[data-testid="stDataFrame"] {
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.04);
+}
+
+
+/* =========================================================
+   9. CHART CONTAINERS
+   ========================================================= */
+
+div[data-testid="stVegaLiteChart"],
+div[data-testid="stArrowVegaLiteChart"] {
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+
+    padding: 12px;
+
+    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.04);
+}
+
+
+/* =========================================================
+   10. ALERT / INFO BOXES
+   ========================================================= */
+
+div[data-testid="stAlert"] {
+    border-radius: 12px;
+}
+
+
+/* =========================================================
+   11. SLIDERS
+   ========================================================= */
+/* =========================================================
+   DARK SIDEBAR
+   ========================================================= */
+
+section[data-testid="stSidebar"] {
+    background: #0f172a !important;
+    border-right: 1px solid #1e293b;
+}
+
+section[data-testid="stSidebar"] * {
+    color: #7596b6 !important;
+}
+
+/* Sidebar inputs */
+section[data-testid="stSidebar"] div[data-baseweb="select"] > div {
+    background: #1e293b !important;
+    border-color: #334155 !important;
+}
+
+/* Sidebar sliders */
+section[data-testid="stSidebar"] [data-testid="stSlider"] {
+    color: #516f8d !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stSlider"] [role="slider"] {
+    background-color: #6f3d3d !important;
+    border: 3px solid #0f172a !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stSlider"] [data-baseweb="slider"] > div > div {
+    background-color: #643f3f !important;
+}
+
+/* =========================================================
+   12. SECTION DIVIDERS
+   ========================================================= */
+
+hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+/* =========================================================
+   13. RISK BADGES
+   ========================================================= */
+
+.risk-badge {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 999px;
+
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.risk-low {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.risk-medium {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.risk-high {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+
+/* =========================================================
+   14. EMPLOYEE PROFILE CARD
+   ========================================================= */
+
+.employee-card {
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+
+    padding: 22px;
+
+    margin-top: 10px;
+
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.05);
+}
+
+.employee-card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+
+    color: #0f172a;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   15. SECTION HEADERS
+   ========================================================= */
+
+.section-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+
+    color: #0f172a;
+
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   16. RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .block-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .header-status {
+        align-self: flex-start;
+    }
+
+    .dashboard-title {
+        font-size: 1.35rem;
+    }
+
+}
