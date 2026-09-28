@@ -1,0 +1,2 @@
+# Machine-Learning-Based-Employee-Attrition-Prediction-and-Risk-Scoring-System
+Developed an ML-powered HR analytics system to predict employee attrition and assign Low, Medium, and High risk scores. Implemented data preprocessing, feature engineering, SMOTE, and multiple ML models including Logistic Regression, Random Forest, and Gradient Boosting. Built an interactive Streamlit dashboard for employee risk analysis
